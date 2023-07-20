@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 33, 33, 0.758);
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: circle;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.section {
+  width: 350px;
+  background: url(imgs/background.png) center/cover no-repeat;
+  border-radius: 1.5rem;
+  box-shadow: 10px 5px 5px rgb(49, 43, 43);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  height: 65px;
+  border-bottom: 2px dashed gray;
+}
+
+.header__darkMode {
+  color: palevioletred;
+  transition: all 250ms ease-in-out;
+}
+
+.header__darkMode:hover {
+  color: rgb(36, 48, 216);
+  transform: scale(1.1);
+}
+
+.header h4 {
+  color: rgb(6, 114, 161);
+}
+
+.items {
+  height: 300px;
+  overflow-y: auto;
+}
+
+.item__row {
+  margin: 0 1.5rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.item__name {
+  color: rgb(48, 46, 46);
+}
+
+.item__delete {
+  color: rgb(57, 60, 90);
+  transition: all 250ms ease-in-out;
+}
+
+.item__delete:hover {
+  color: rgb(255, 0, 221);
+  transform: scale(1.1);
+}
+
+.item__divider {
+  border: 1px dashed gray;
+}
+
+.footer__form {
+  display: flex;
+}
+
+.footer__input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  padding: 0 0.7rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.footer__button {
+  width: 48px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0.8rem 0;
+  margin-right: 0.3rem;
+}
+
+.footer__button i {
+  color: rgb(79, 76, 76);
+  transition: all 250ms ease-in-out;
+}
+
+.footer__button i:hover {
+  color: rgb(205, 33, 196);
+  transform: scale(1.1);
+}

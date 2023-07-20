@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/13cb755b54.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="section">
+      <header class="header">
+        <button class="header__darkMode">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+        <h4>Shopping List</h4>
+      </header>
+      <ul class="items">
+        <li class="item__row">
+          <div class="item">
+            <span class="item__name">name</span>
+            <button class="item__delete">
+              <i class="fa-solid fa-square-minus"></i>
+            </button>
+          </div>
+          <div class="item__divider"></div>
+        </li>
+      </ul>
+      <footer class="footer">
+        <form class="footer__form">
+          <input class="footer__input" type="text" placeholder="Add todo..." />
+          <button class="footer__button">
+            <i class="fa-solid fa-file-circle-plus"></i>
+          </button>
+        </form>
+      </footer>
+    </section>
+  </body>
+</html>
