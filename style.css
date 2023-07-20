@@ -6,6 +6,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   background-color: rgba(33, 33, 33, 0.758);
@@ -29,6 +30,10 @@ button {
   box-shadow: 10px 5px 5px rgb(49, 43, 43);
 }
 
+.section.dark {
+  background: url(imgs/background-darkMode.png) center/cover no-repeat;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -50,6 +55,10 @@ button {
 }
 
 .header h4 {
+  color: white;
+}
+
+.header.dark h4 {
   color: rgb(6, 114, 161);
 }
 
@@ -65,19 +74,19 @@ button {
 .item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.6rem;
+  margin: 0.6rem 0;
 }
 
 .item__name {
-  color: rgb(48, 46, 46);
+  color: rgb(124, 113, 113);
 }
 
-.item__delete {
-  color: rgb(57, 60, 90);
+.item__delete i {
+  color: rgb(110, 112, 133);
   transition: all 250ms ease-in-out;
 }
 
-.item__delete:hover {
+.item__delete:hover i {
   color: rgb(255, 0, 221);
   transform: scale(1.1);
 }
@@ -92,6 +101,7 @@ button {
 
 .footer__input {
   border: none;
+  color: rgb(0, 149, 255);
   background: transparent;
   outline: none;
   font-size: 24px;
@@ -115,4 +125,22 @@ button {
 .footer__button i:hover {
   color: rgb(205, 33, 196);
   transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(211, 207, 207);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(37, 190, 201);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255, 140, 0);
 }
