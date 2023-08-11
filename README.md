@@ -1,7 +1,7 @@
 # Basic-shopping-list
 
 ##github URL<br/>
-https://sangwonl22.github.io/Basic-shopping-list/
+https://magenta-starship-529dad.netlify.app/
 
 -itmes can be added and deleted<br/>
 -use form apis
